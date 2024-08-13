@@ -7,7 +7,6 @@
     
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
-    </link>
     <script type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
     </script>
@@ -16,12 +15,17 @@
     </script>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
-    </link>
+    
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <nav id="navbar">
       <div class="nav-btn">
-        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
+        <a class="btn btn-sm btn-dark hidden" id="buttonInstall" role="button">Install!</a>
       </div>
       <h1> Just Another Text Editor</h1>
       
@@ -36,5 +40,9 @@
       </div>
     </main>
     
+    <!-- JavaScript files here -->
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/install.js"></script>
+
   </body>
 </html>
